@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="nav display-flex justify-content align-items">
+        <img class="invert" src="img/spotify.svg" alt="logo_img" />
+        <img
+          class="hamburger invert"
+          src="img/hamburger.svg"
+          alt="hamburger_img"
+        />
+        <img
+          class="close2 invert"
+          src="img/close.svg"
+          alt="close_btn"
+          style="display: none; cursor: pointer;"
+        />
+        <div class="home-search display-flex justify-content align-items">
+          <div class="home bg-color">
+            <img class="invert" src="img/home.svg" alt="home_img" />
+          </div>
+          <div class="search-engine display-flex align-items bg-color">
+            <img class="invert" src="img/search_logo.svg" alt="search_logo_img" />
+            <div class="search-bar">
+              <span>
+                <input type="search" placeholder="What do you want to play?" />
+              </span>
+            </div>
+            <div class="browse">
+              <img class="invert" src="img/browse.svg" alt="browse_img" />
+            </div>
+          </div>
+        </div>
+        <div class="details display-flex">
+          <button class="btn">Premium</button>
+          <button class="btn">Support</button>
+          <button class="btn">Download</button>
+          <span class="line">|</span>
+          <div class="sign-login align-items">
+            <img
+              class="download_img invert"
+              src="img/download.svg"
+              alt="download_img"
+            />
+            <button class="sign-in">Sign-In</button>
+            <button class="login">Log in</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="mainContainer display-flex">
+        <div class="left">
+          <div class="library display-flex">
+            <span class="yourLibrary">Your library</span>
+            <img
+              class="plusBtn invert"
+              src="img/plusButton.svg"
+              alt="plusButton_img"
+            />
+            <div class="close nav-close">
+              <img width="30" class="invert" src="img/close.svg" alt="close_btn">
+            </div>
+          </div>
+          <div class="songList">
+            <ul></ul>
+          </div>
+          <div class="createPlaylist bg-color">
+            <div class="create">Create your first playlist</div>
+            <div class="easy">It's easy, we'll help you</div>
+            <button class="playlist">Create playlist</button>
+          </div>
+          <div class="browsePodcasts bg-color">
+            <div class="find">Let's find some podcasts to follow</div>
+            <div class="update">We'll keep you updated on new episodes</div>
+            <button class="podcasts">Browse Podcasts</button>
+          </div>
+          <div class="left-footer">
+            <div>
+              <a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a>
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/privacy/"
+                ><span>Privacy Center</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/legal/privacy-policy/"
+                ><span>Privacy Policy</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/legal/cookies-policy/"
+                ><span>Cookies</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"
+                ><span>About Ads</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/accessibility/"
+                ><span>Accessibility</span></a
+              >
+            </div>
+            <button class="english-btn">
+              <img
+                class="english_icon invert"
+                src="img/english_icon.svg"
+                alt="english_icon"
+              />
+              <span>English</span>
+            </button>
+          </div>
+        </div>
+        <div class="right bg-color">
+          <div class="spotifyPlaylists">
+            <div class="hamburgerContainer display-flex">
+              <h1>Spotify Playlists</h1>
+            </div>
+
+            <div class="cardContainer"></div>
+          </div>
+          <div class="playBar bg-color">
+            <div class="abovebar">
+              <div class="songInfo"></div>
+              <div class="song-btn display-flex justify-content">
+                <div class="previous-btn invert">
+                  <img id="previous" src="img/previous.svg" />
+                </div>
+                <div class="play-btn invert">
+                  <img id="play" src="img/play.svg" />
+                </div>
+                <div class="next-btn invert">
+                  <img id="next" src="img/next.svg" />
+                </div>
+              </div>
+              <div class="timevol">
+                <div class="songTime"></div>
+                <div class="volume display-flex align-items">
+                  <img class="volume invert" width="25" src="img/volume.svg" alt="" />
+                  <div width="5" class="range">
+                    <input type="range" name="volume" id="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="seekBar invert">
+              <div class="circle invert"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
