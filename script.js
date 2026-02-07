@@ -164,6 +164,7 @@ async function main() {
     document.querySelector(".left").style.left = "0";
     document.querySelector(".hamburger").style.display = "none"; // Hide hamburger
     document.querySelector(".close2").style.display = "block"; // Show close button in nav
+    document.querySelector(".left .close").style.display = "block"; // Show the internal close button
   });
 
   // Add an event listener for close button (in left sidebar)
@@ -171,6 +172,7 @@ async function main() {
     document.querySelector(".left").style.left = "-120%";
     document.querySelector(".hamburger").style.display = "block"; // Show hamburger
     document.querySelector(".close2").style.display = "none"; // Hide close button in nav
+    document.querySelector(".left .close").style.display = "none"; // Hide the internal close button
   });
 
   // Add an event listener for the new close2 button in the nav
@@ -178,6 +180,7 @@ async function main() {
     document.querySelector(".left").style.left = "-120%";
     document.querySelector(".hamburger").style.display = "block"; // Show hamburger
     document.querySelector(".close2").style.display = "none"; // Hide close button in nav
+    document.querySelector(".left .close").style.display = "none"; // Hide the internal close button
   });
 
   // Add an event listener to previous
